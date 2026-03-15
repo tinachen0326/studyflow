@@ -1,5 +1,13 @@
 # StudyFlow
 
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)  
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)  
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)  
+[![Chart.js](https://img.shields.io/badge/Chart.js-FF6384?style=for-the-badge&logo=chart.js&logoColor=white)](https://www.chartjs.org/)  
+[![Font Awesome](https://img.shields.io/badge/Font_Awesome-528DD7?style=for-the-badge&logo=font-awesome&logoColor=white)](https://fontawesome.com/)  
+[![LocalStorage](https://img.shields.io/badge/LocalStorage-ff9800?style=for-the-badge)](#)  
+[![License](https://img.shields.io/badge/License-Personal_Use-blue?style=for-the-badge)](#版權聲明)
+
 StudyFlow 是一個學習效率管理系統，幫助使用者管理學習任務、專注時間以及學習統計。
 
 本專案使用 JavaScript 開發，並結合 UI / UX 設計思考，打造一個簡單且高效率的學習管理工具。
