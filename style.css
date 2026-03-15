@@ -1,0 +1,14 @@
+body {
+  font-family: Arial;
+  background: #f5f5f5;
+}
+
+.task-container {
+  width: 400px;
+  margin: auto;
+}
+
+button {
+  background: #4caf50;
+  color: white;
+}
