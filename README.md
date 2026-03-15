@@ -108,23 +108,30 @@ Data Storage
 ```
 studyflow/
 │
-├── index.html          # 首頁 / 導航頁
-├── dashboard.html      # 儀表板頁面
-├── tasks.html          # 任務管理頁面
+├── index.html                 # 首頁 / 專案入口頁（Landing Page，導向各功能頁）
+├── dashboard.html             # 儀表板頁面（顯示今日任務、番茄鐘、學習統計）
+├── tasks.html                 # 任務管理頁面（新增、刪除、查看任務）
 │
 ├── css/
-│   └── style.css       # 共用 CSS 樣式
+│   └── style.css              # 全站共用 CSS 樣式（自訂樣式或 Tailwind 補充樣式）
 │
-├── js/
-│   ├── taskManager.js  # 任務管理
-│   ├── pomodoroTimer.js# 番茄鐘
-│   ├── statistics.js   # 學習統計
-│   └── storage.js      # LocalStorage 封裝
+├── js/                        # JavaScript 主程式資料夾
 │
-├── assets/
-│   └── icons/          # 圖示資源
+│   ├── modules/               # 功能模組（主要業務邏輯）
+│   │   ├── taskManager.js     # 任務管理模組（新增、刪除、渲染任務列表）
+│   │   └── pomodoroTimer.js   # 番茄鐘模組（25分鐘倒數計時、開始與重置）
+│   │
+│   ├── analytics/             # 數據統計相關模組
+│   │   └── statistics.js      # 學習統計（顯示完成任務數、學習數據）
+│   │
+│   └── utils/                 # 工具函式（可被多個模組共用）
+│       └── storage.js         # LocalStorage 工具（資料儲存與讀取封裝）
 │
-└── README.md           # 專案說明文件
+├── assets/                    # 靜態資源資料夾
+│   └── icons/                 # UI 圖示（SVG 或圖片）
+│
+├── README.md                  # GitHub 專案說明文件
+└── .gitattributes             # GitHub Linguist 設定（讓語言統計偏向 JavaScript）
 ```
 
 ---
