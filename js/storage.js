@@ -1,24 +1,8 @@
-function saveTasks() {
-  const tasks = [];
-
-  document.querySelectorAll("#taskList li").forEach((li) => {
-    tasks.push(li.firstChild.textContent);
-  });
-
-  localStorage.setItem("tasks", JSON.stringify(tasks));
+// LocalStorage 封裝
+function saveData(key, value) {
+  localStorage.setItem(key, JSON.stringify(value));
 }
 
-function loadTasks() {
-  const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
-
-  tasks.forEach((task) => {
-    const li = document.createElement("li");
-
-    li.innerHTML = `
-      ${task}
-      <button onclick="deleteTask(this)">刪除</button>
-    `;
-
-    document.getElementById("taskList").appendChild(li);
-  });
+function loadData(key) {
+  return JSON.parse(localStorage.getItem(key)) || [];
 }

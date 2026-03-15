@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard - StudyFlow</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 font-sans">
+    <header class="bg-white shadow p-4 mb-6">
+        <h1 class="text-2xl font-bold">StudyFlow Dashboard</h1>
+    </header>
+
+    <main class="container mx-auto space-y-6">
+        <!-- 今日任務 -->
+        <section class="bg-white p-6 rounded shadow space-y-4">
+            <h2 class="text-xl font-semibold">今日任務</h2>
+            <ul id="taskList" class="list-disc pl-6 space-y-2"></ul>
+        </section>
+
+        <!-- 番茄鐘 -->
+        <section class="bg-white p-6 rounded shadow space-y-4">
+            <h2 class="text-xl font-semibold">番茄鐘</h2>
+            <p id="timer" class="text-4xl font-mono text-center">25:00</p>
+            <div class="flex space-x-4 justify-center">
+                <button id="startBtn" class="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600">開始</button>
+                <button id="resetBtn" class="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600">重置</button>
+            </div>
+        </section>
+
+        <!-- 學習統計 -->
+        <section class="bg-white p-6 rounded shadow space-y-4">
+            <h2 class="text-xl font-semibold">學習統計</h2>
+            <p id="stats">完成任務數：<span id="completedTasks">0</span></p>
+        </section>
+    </main>
+
+    <script src="js/storage.js"></script>
+    <script src="js/taskManager.js"></script>
+    <script src="js/pomodoroTimer.js"></script>
+    <script src="js/statistics.js"></script>
+</body>
+
+</html>

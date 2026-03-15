@@ -106,25 +106,25 @@ Data Storage
 # 專案結構
 
 ```
-studyflow
+studyflow/
 │
-├── index.html
-├── dashboard.html
-├── tasks.html
+├── index.html          # 首頁 / 導航頁
+├── dashboard.html      # 儀表板頁面
+├── tasks.html          # 任務管理頁面
 │
-├── css
-│ └── style.css
+├── css/
+│   └── style.css       # 共用 CSS 樣式
 │
-├── js
-│ ├── taskManager.js
-│ ├── pomodoroTimer.js
-│ ├── statistics.js
-│ └── storage.js
+├── js/
+│   ├── taskManager.js  # 任務管理
+│   ├── pomodoroTimer.js# 番茄鐘
+│   ├── statistics.js   # 學習統計
+│   └── storage.js      # LocalStorage 封裝
 │
-├── assets
-│ └── icons
+├── assets/
+│   └── icons/          # 圖示資源
 │
-└── README.md
+└── README.md           # 專案說明文件
 ```
 
 ---

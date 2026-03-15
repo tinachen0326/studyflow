@@ -1,24 +1,94 @@
 <!DOCTYPE html>
-<html lang="zh-hant">
+<html lang="zh-Hant">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StudyFlow</title>
-    <link rel="stylesheet" href="style.css">
+    <title>StudyFlow - 學習效率管理工具</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
-<body>
-    <h1>StudyFlow</h1>
-    <div class="task-container">
-        <input id="textInput" type="text" placeholder="新稱學習任務">
-        <button onclick="addTask()">新增</button>
-        <ul id="taskList"></ul>
+<body class="bg-gray-50 text-gray-800">
 
-    </div>
-    <script src="script.js"></script>
-    <script src="storage.js"></script>
-    <script src="task.js"></script>
+    <!-- Navbar -->
+    <header class="bg-white shadow">
+        <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+            <h1 class="text-xl font-bold">StudyFlow</h1>
+
+            <nav class="space-x-4">
+                <a href="dashboard.html" class="text-blue-600 hover:underline">Dashboard</a>
+                <a href="tasks.html" class="text-blue-600 hover:underline">Tasks</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="max-w-6xl mx-auto py-20 px-6 text-center">
+
+        <h2 class="text-4xl font-bold mb-6">
+            專注學習 · 高效管理
+        </h2>
+
+        <p class="text-lg text-gray-600 mb-10">
+            StudyFlow 是一個輕量級學習效率管理工具，
+            整合任務管理、番茄鐘與學習統計，
+            幫助你專注完成每天的學習目標。
+        </p>
+
+        <div class="space-x-4">
+
+            <a href="dashboard.html" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700">
+                進入 Dashboard
+            </a>
+
+            <a href="tasks.html" class="bg-gray-200 px-6 py-3 rounded-lg hover:bg-gray-300">
+                任務管理
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Features -->
+    <section class="bg-white py-16">
+
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-6">
+
+            <!-- Feature 1 -->
+            <div class="p-6 rounded-lg shadow-sm border">
+                <h3 class="text-xl font-semibold mb-3">任務管理</h3>
+                <p class="text-gray-600">
+                    建立每日學習任務，輕鬆追蹤進度。
+                </p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="p-6 rounded-lg shadow-sm border">
+                <h3 class="text-xl font-semibold mb-3">番茄鐘專注</h3>
+                <p class="text-gray-600">
+                    使用 Pomodoro Technique 提升專注力。
+                </p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="p-6 rounded-lg shadow-sm border">
+                <h3 class="text-xl font-semibold mb-3">學習統計</h3>
+                <p class="text-gray-600">
+                    查看完成任務數量與學習成果。
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-gray-500 py-6 text-sm">
+        © 2026 StudyFlow Project
+    </footer>
+
 </body>
 
 </html>
